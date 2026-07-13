@@ -16,6 +16,14 @@
       ],
       "versions": [
         {
+          "version": "1.0.1",
+          "date": "2026-07-12",
+          "localizedDescription": "Latest Calibre update with activity, push notifications, support, profile, requests, and order improvements (build 2).",
+          "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.1-b2/Calibre.ipa",
+          "size": 14634464,
+          "minOSVersion": "18.0"
+        },
+        {
           "version": "1.0",
           "date": "2026-07-12",
           "localizedDescription": "Initial SideStore release (build 1).",
