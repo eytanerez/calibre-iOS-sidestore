@@ -22,6 +22,14 @@
       ],
       "versions": [
         {
+          "version": "1.0.7",
+          "date": "2026-07-14",
+          "localizedDescription": "Discover swipe is now one continuous motion (no more stop-and-reswipe), with a hands-on tutorial that teaches the deck. Discover and the home \"For You\" shelf are powered by a personalized recommendation engine. Sell dashboard: drafts named by title with swipe-to-delete, top-5 inventory behind a Show all toggle, and a scrollable filter bar (build 8).",
+          "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.7-b8/Calibre.ipa",
+          "size": 14869603,
+          "minOSVersion": "18.0"
+        },
+        {
           "version": "1.0.6",
           "date": "2026-07-14",
           "localizedDescription": "Real-device testing fixes: actual card payment form, fixed overlapping listing images, one-motion swipe deck, Sell page spacing, Journal entry point, Discover intro, Saved grid, wizard draft/validation fixes, wire confirmation dialog, full spacing pass, and a System/Light/Dark appearance toggle (build 7).",
