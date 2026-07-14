@@ -22,6 +22,14 @@
       ],
       "versions": [
         {
+          "version": "1.0.8",
+          "date": "2026-07-14",
+          "localizedDescription": "Corrects the seller fee rates back to 8% for private sellers (keep 92%) and 5% for verified dealers (keep 95%) everywhere they appear (build 9).",
+          "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.8-b9/Calibre.ipa",
+          "size": 14899539,
+          "minOSVersion": "18.0"
+        },
+        {
           "version": "1.0.7",
           "date": "2026-07-14",
           "localizedDescription": "Discover swipe is now one continuous motion (no more stop-and-reswipe), with a hands-on tutorial that teaches the deck. Discover and the home \"For You\" shelf are powered by a personalized recommendation engine. Sell dashboard: drafts named by title with swipe-to-delete, top-5 inventory behind a Show all toggle, and a scrollable filter bar (build 8).",
