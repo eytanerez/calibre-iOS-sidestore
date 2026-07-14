@@ -10,27 +10,35 @@
       "subtitle": "Discover, buy, and sell exceptional watches.",
       "localizedDescription": "A native iOS marketplace for discovering, buying, and selling watches.",
       "iconURL": "https://raw.githubusercontent.com/eytanerez/calibre-iOS-sidestore/main/icon.png",
-      "appPermissions": {
-        "entitlements": ["aps-environment"],
-        "privacy": {
-          "NSCameraUsageDescription": "Calibre uses the camera to photograph watches you list for sale and, during seller verification, to capture identity documents.",
-          "NSPhotoLibraryUsageDescription": "Calibre lets you choose existing photos of your watch when creating a listing."
+      "permissions": [
+        {
+          "type": "camera",
+          "usageDescription": "Calibre uses the camera to photograph watches you list for sale and, during seller verification, to capture identity documents."
+        },
+        {
+          "type": "photos",
+          "usageDescription": "Calibre lets you choose existing photos of your watch when creating a listing."
         }
-      },
+      ],
       "versions": [
         {
+          "version": "1.0.3",
+          "date": "2026-07-14",
+          "localizedDescription": "Calibre app completion and reliability update (build 4).",
+          "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.3-b4/Calibre.ipa",
+          "size": 14750266,
+          "minOSVersion": "18.0"
+        },
+        {
           "version": "1.0.2",
-          "buildVersion": "3",
           "date": "2026-07-13",
           "localizedDescription": "Calibre mobile and backend integration update (build 3).",
           "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.2-b3/Calibre.ipa",
           "size": 14531581,
-          "sha256": "30da87ca0bcaa56ccedde61558375139600e8f2534ffb9de2e68b1822b4fa50d",
           "minOSVersion": "18.0"
         },
         {
           "version": "1.0.1",
-          "buildVersion": "2",
           "date": "2026-07-12",
           "localizedDescription": "Latest Calibre update with activity, push notifications, support, profile, requests, and order improvements (build 2).",
           "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.1-b2/Calibre.ipa",
@@ -39,7 +47,6 @@
         },
         {
           "version": "1.0",
-          "buildVersion": "1",
           "date": "2026-07-12",
           "localizedDescription": "Initial SideStore release (build 1).",
           "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0-b1/Calibre.ipa",
