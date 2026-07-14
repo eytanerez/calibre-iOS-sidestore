@@ -22,6 +22,14 @@
       ],
       "versions": [
         {
+          "version": "1.0.4",
+          "date": "2026-07-14",
+          "localizedDescription": "Connects Calibre to the local Mac backend over Bonjour and adds the required iOS Local Network permission (build 5).",
+          "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.4-b5/Calibre.ipa",
+          "size": 14750327,
+          "minOSVersion": "18.0"
+        },
+        {
           "version": "1.0.3",
           "date": "2026-07-14",
           "localizedDescription": "Calibre app completion and reliability update (build 4).",
