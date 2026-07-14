@@ -54,6 +54,7 @@ struct RootView: View {
     @State private var bootstrapped = false
     @AppStorage("hasSeenIntro") private var hasSeenIntro = false
     @AppStorage("guestChosen") private var guestChosen = false
+    @AppStorage("appearancePreference") private var appearancePreference: AppearancePreference = .system
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     private var phase: Phase {
@@ -106,6 +107,9 @@ struct RootView: View {
             }
         }
         .animation(Motion.easeSlow, value: phase)
+        // Applied once at the root — sheets and every tab inherit it via the
+        // environment, same as the rest of SwiftUI's environment propagation.
+        .preferredColorScheme(appearancePreference.colorScheme)
         .toastHost(services.toasts)
         .sheet(item: Binding(
             get: { sheet },
@@ -157,6 +161,19 @@ struct RootView: View {
                         message: "We'll keep an eye on this one for you.",
                         tone: .success
                     )
+                }
+            }
+            // Screenshot hook: `-selectTab home|discover|sell|activity|you`
+            // jumps straight to a tab without scripted touch input.
+            if let index = ProcessInfo.processInfo.arguments.firstIndex(of: "-selectTab"),
+               ProcessInfo.processInfo.arguments.indices.contains(index + 1) {
+                switch ProcessInfo.processInfo.arguments[index + 1] {
+                case "home": services.router.selectedTab = .home
+                case "discover": services.router.selectedTab = .discover
+                case "sell": services.router.selectedTab = .sell
+                case "activity": services.router.selectedTab = .activity
+                case "you": services.router.selectedTab = .you
+                default: break
                 }
             }
             #endif
