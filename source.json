@@ -22,6 +22,14 @@
       ],
       "versions": [
         {
+          "version": "1.0.5",
+          "date": "2026-07-14",
+          "localizedDescription": "Connects Calibre to the local backend through Cloudflare Tunnel from any network (build 6).",
+          "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.5-b6/Calibre.ipa",
+          "size": 14750280,
+          "minOSVersion": "18.0"
+        },
+        {
           "version": "1.0.4",
           "date": "2026-07-14",
           "localizedDescription": "Connects Calibre to the local Mac backend over Bonjour and adds the required iOS Local Network permission (build 5).",
