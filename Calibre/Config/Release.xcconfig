@@ -1,3 +1,3 @@
-// SideStore release — temporary physical-device testing through the backend-only Cloudflare Quick Tunnel.
+// SideStore release — talks to the deployed Calibre API.
 // Routes are served at the origin root (no /api prefix).
-API_BASE_URL = https:/$()/novels-west-architect-oklahoma.trycloudflare.com
+API_BASE_URL = https:/$()/dev.api.buycalibre.com
