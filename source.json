@@ -22,6 +22,14 @@
       ],
       "versions": [
         {
+          "version": "1.0.9",
+          "date": "2026-07-14",
+          "localizedDescription": "Rolls the hands-on tutorial across the app — browse filters, cart, checkout, offers, home, and the listing wizard now have first-run spotlight lessons alongside Discover and Sell (build 10).",
+          "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.9-b10/Calibre.ipa",
+          "size": 14899541,
+          "minOSVersion": "18.0"
+        },
+        {
           "version": "1.0.8",
           "date": "2026-07-14",
           "localizedDescription": "Corrects the seller fee rates back to 8% for private sellers (keep 92%) and 5% for verified dealers (keep 95%) everywhere they appear (build 9).",

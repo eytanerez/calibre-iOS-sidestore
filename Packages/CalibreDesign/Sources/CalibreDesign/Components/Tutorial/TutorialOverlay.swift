@@ -41,6 +41,7 @@ struct TutorialOverlayModifier: ViewModifier {
                                 .flatMap { anchors[$0] }
                                 .map { proxy[$0] },
                             containerSize: proxy.size,
+                            safeAreaInsets: proxy.safeAreaInsets,
                             controller: controller
                         )
                         .ignoresSafeArea()
@@ -62,8 +63,10 @@ struct TutorialScrim: View {
     let position: (step: Int, total: Int)?
     let targetRect: CGRect?
     let containerSize: CGSize
+    let safeAreaInsets: EdgeInsets
     let controller: TutorialController
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @State private var cardHeight: CGFloat = 0
 
     /// Padded (and, for circles, squared) target rect in overlay coordinates.
     private var spotRect: CGRect? {
@@ -141,22 +144,16 @@ struct TutorialScrim: View {
     // MARK: Coach card
 
     private var coachLayer: some View {
-        VStack(spacing: 0) {
-            if spotRect == nil {
-                Spacer(minLength: 0)
-                card
-                Spacer(minLength: 0)
-            } else if cardTowardTop {
-                card
-                Spacer(minLength: 0)
-            } else {
-                Spacer(minLength: 0)
-                card
-            }
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .padding(.horizontal, Space.margin)
-        .padding(.vertical, Space.xxl)
+        card
+            .frame(maxWidth: min(380, containerSize.width - 2 * Space.margin))
+            .background(
+                GeometryReader { proxy in
+                    Color.clear.preference(key: TutorialCardHeightKey.self, value: proxy.size.height)
+                }
+            )
+            .position(x: containerSize.width / 2, y: cardCenterY)
+            .frame(width: containerSize.width, height: containerSize.height, alignment: .topLeading)
+            .onPreferenceChange(TutorialCardHeightKey.self) { cardHeight = $0 }
     }
 
     private var card: some View {
@@ -165,10 +162,46 @@ struct TutorialScrim: View {
             .transition(reduceMotion ? .opacity : .opacity.combined(with: .offset(y: 8)))
     }
 
-    /// Put the card opposite the target: control low on screen → card up top.
-    private var cardTowardTop: Bool {
-        guard let rect = spotRect else { return false }
-        return rect.midY > containerSize.height * 0.52
+    /// Where to centre the coach card. Prefer the gap opposite the target;
+    /// if neither gap fits the measured card, centre it over the spotlight so
+    /// it is always fully on-screen. A generous bottom clearance keeps it
+    /// clear of a floating tab bar (which iOS doesn't report as a safe inset).
+    private var cardCenterY: CGFloat {
+        let half = cardHeight / 2
+        let minCenter = safeAreaInsets.top + Space.l + half
+        let bottomClearance = safeAreaInsets.bottom + 72
+        let maxCenter = containerSize.height - bottomClearance - half
+        let screenCenter = (minCenter + maxCenter) / 2
+
+        guard minCenter <= maxCenter else { return containerSize.height / 2 }
+        guard cardHeight > 0, let rect = spotRect else { return screenCenter }
+
+        let gap = Space.l
+        let below = rect.maxY + gap + half
+        let above = rect.minY - gap - half
+        let targetInTopHalf = rect.midY < containerSize.height * 0.5
+
+        // Preferred side first, then the other, then centre-over.
+        let preferred = targetInTopHalf ? below : above
+        let fallback = targetInTopHalf ? above : below
+        if fitsBelow(preferred, min: minCenter, max: maxCenter) { return clamp(preferred, minCenter, maxCenter) }
+        if fitsBelow(fallback, min: minCenter, max: maxCenter) { return clamp(fallback, minCenter, maxCenter) }
+        return screenCenter
+    }
+
+    private func fitsBelow(_ center: CGFloat, min: CGFloat, max: CGFloat) -> Bool {
+        center >= min && center <= max
+    }
+
+    private func clamp(_ value: CGFloat, _ lower: CGFloat, _ upper: CGFloat) -> CGFloat {
+        Swift.min(Swift.max(value, lower), upper)
+    }
+}
+
+private struct TutorialCardHeightKey: PreferenceKey {
+    static let defaultValue: CGFloat = 0
+    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
+        value = Swift.max(value, nextValue())
     }
 }
 
