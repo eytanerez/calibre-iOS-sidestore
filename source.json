@@ -22,6 +22,14 @@
       ],
       "versions": [
         {
+          "version": "1.0.13",
+          "date": "2026-07-17",
+          "localizedDescription": "Community refined behind a Today / Market / Journal switcher, a proper way out of the deck, your daily-question answer now sticks wherever you go, and the Collection becomes the Vault.",
+          "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.13-b14/Calibre.ipa",
+          "size": 15246808,
+          "minOSVersion": "18.0"
+        },
+        {
           "version": "1.0.12",
           "date": "2026-07-17",
           "localizedDescription": "Publishes the current Community, Collection, Discover, Saved, Cart, and Sell experience with a SideStore-detectable version/build update and the established Cloudflare Tunnel backend configuration (build 13).",
