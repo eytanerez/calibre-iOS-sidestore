@@ -22,6 +22,14 @@
       ],
       "versions": [
         {
+          "version": "1.0.15",
+          "date": "2026-07-17",
+          "localizedDescription": "Routes the SideStore Release build through the current Cloudflare Tunnel to the local Calibre backend (build 16).",
+          "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.15-b16/Calibre.ipa",
+          "size": 15288111,
+          "minOSVersion": "18.0"
+        },
+        {
           "version": "1.0.14",
           "date": "2026-07-17",
           "localizedDescription": "Clean rebuild of the Community redesign, the deck's exit button, the daily-question vote fix, and the Vault rename.",
