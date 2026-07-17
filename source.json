@@ -22,6 +22,14 @@
       ],
       "versions": [
         {
+          "version": "1.0.16",
+          "date": "2026-07-17",
+          "localizedDescription": "Adds the reference-level Calibre Index market board with 20 watch tickers, 90-day charts, filtering, sorting, and detailed performance views (build 17).",
+          "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.16-b17/Calibre.ipa",
+          "size": 15340860,
+          "minOSVersion": "18.0"
+        },
+        {
           "version": "1.0.15",
           "date": "2026-07-17",
           "localizedDescription": "Routes the SideStore Release build through the current Cloudflare Tunnel to the local Calibre backend (build 16).",
