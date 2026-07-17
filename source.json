@@ -22,6 +22,14 @@
       ],
       "versions": [
         {
+          "version": "1.0.11",
+          "date": "2026-07-17",
+          "localizedDescription": "Community tab (daily question, polls, live Calibre market data, the Journal), Collection tab (your watches with Passports and market estimates), swipe deck one tap from Home, market context in the sell flow, server-backed alerts, and saved searches.",
+          "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.11-b12/Calibre.ipa",
+          "size": 15228957,
+          "minOSVersion": "18.0"
+        },
+        {
           "version": "1.0.10",
           "date": "2026-07-15",
           "localizedDescription": "Home shelves end in a view-all card and a Browse all watches button; Saved matches Home's card behavior; Cart's saved-for-later rows are tappable with swipe actions; Sell drafts get swipe-to-delete everywhere they appear. Adds real Add/Replace card via Stripe's SetupIntent flow with webhook-confirmation polling. Fixes loading pop-in on Home, Sell, and listing pages, and clears cached cart/watchlist on sign-out (build 11).",
@@ -32,7 +40,7 @@
         {
           "version": "1.0.9",
           "date": "2026-07-14",
-          "localizedDescription": "Rolls the hands-on tutorial across the app — browse filters, cart, checkout, offers, home, and the listing wizard now have first-run spotlight lessons alongside Discover and Sell (build 10).",
+          "localizedDescription": "Rolls the hands-on tutorial across the app \u2014 browse filters, cart, checkout, offers, home, and the listing wizard now have first-run spotlight lessons alongside Discover and Sell (build 10).",
           "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.9-b10/Calibre.ipa",
           "size": 14899541,
           "minOSVersion": "18.0"
