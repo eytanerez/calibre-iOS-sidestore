@@ -1,169 +1,162 @@
 {
+  "$schema": "https://github.com/SideStore/sidestore-source-types/raw/main/schema.json",
   "name": "Calibre (Personal)",
-  "identifier": "com.buycalibre.calibre.sidestore-source",
-  "sourceURL": "https://raw.githubusercontent.com/eytanerez/calibre-iOS-sidestore/main/source.json",
+  "description": "Self-hosted sideload source for the Calibre iOS app.",
   "apps": [
     {
       "name": "Calibre",
       "bundleIdentifier": "com.buycalibre.calibre",
       "developerName": "Eytan Erez",
-      "subtitle": "Discover, buy, and sell exceptional watches.",
       "localizedDescription": "A native iOS marketplace for discovering, buying, and selling watches.",
       "iconURL": "https://raw.githubusercontent.com/eytanerez/calibre-iOS-sidestore/main/icon.png",
-      "permissions": [
-        {
-          "type": "camera",
-          "usageDescription": "Calibre uses the camera to photograph watches you list for sale and, during seller verification, to capture identity documents."
-        },
-        {
-          "type": "photos",
-          "usageDescription": "Calibre lets you choose existing photos of your watch when creating a listing."
-        }
-      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
       "versions": [
         {
           "version": "1.0.17",
+          "buildVersion": "18",
           "date": "2026-08-09",
-          "localizedDescription": "Keyboards now match their field — email, number, phone and password. Tap anywhere off a field to dismiss the keyboard.\n\nThe market page scrolls properly, even with a finger on a price chart (press and hold to scrub it), and brand and sort are dropdowns.\n\nListing a watch: Continue tells you what's missing beside each field instead of at the bottom, notes are optional, you can add photos from your library, and tapping a photo you've already taken shows it before you replace it.\n\nYour shop: swipe or press and hold a listing for Edit, Submit and Delete. Opening a listing from Sell keeps you in Sell.\n\nThe vault is behind Face ID and no longer shows value estimates. Save more than one card and pick which to use at checkout. Address forms fill from an address you've already saved, and anything destructive asks first (build 18).",
+          "localizedDescription": "Keyboards now match their field \u2014 email, number, phone and password. Tap anywhere off a field to dismiss the keyboard.\n\nThe market page scrolls properly, even with a finger on a price chart (press and hold to scrub it), and brand and sort are dropdowns.\n\nListing a watch: Continue tells you what's missing beside each field instead of at the bottom, notes are optional, you can add photos from your library, and tapping a photo you've already taken shows it before you replace it.\n\nYour shop: swipe or press and hold a listing for Edit, Submit and Delete. Opening a listing from Sell keeps you in Sell.\n\nThe vault is behind Face ID and no longer shows value estimates. Save more than one card and pick which to use at checkout. Address forms fill from an address you've already saved, and anything destructive asks first (build 18).",
           "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.17-b18/Calibre.ipa",
-          "size": 11454558,
-          "minOSVersion": "18.0"
+          "size": 11454558
         },
         {
           "version": "1.0.16",
+          "buildVersion": "17",
           "date": "2026-07-17",
           "localizedDescription": "Adds the reference-level Calibre Index market board with 20 watch tickers, 90-day charts, filtering, sorting, and detailed performance views (build 17).",
           "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.16-b17/Calibre.ipa",
-          "size": 15340860,
-          "minOSVersion": "18.0"
+          "size": 15340860
         },
         {
           "version": "1.0.15",
+          "buildVersion": "16",
           "date": "2026-07-17",
           "localizedDescription": "Routes the SideStore Release build through the current Cloudflare Tunnel to the local Calibre backend (build 16).",
           "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.15-b16/Calibre.ipa",
-          "size": 15288111,
-          "minOSVersion": "18.0"
+          "size": 15288111
         },
         {
           "version": "1.0.14",
+          "buildVersion": "15",
           "date": "2026-07-17",
           "localizedDescription": "Clean rebuild of the Community redesign, the deck's exit button, the daily-question vote fix, and the Vault rename.",
           "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.14-b15/Calibre.ipa",
-          "size": 15290534,
-          "minOSVersion": "18.0"
+          "size": 15290534
         },
         {
           "version": "1.0.13",
+          "buildVersion": "14",
           "date": "2026-07-17",
           "localizedDescription": "Community refined behind a Today / Market / Journal switcher, a proper way out of the deck, your daily-question answer now sticks wherever you go, and the Collection becomes the Vault.",
           "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.13-b14/Calibre.ipa",
-          "size": 15246808,
-          "minOSVersion": "18.0"
+          "size": 15246808
         },
         {
           "version": "1.0.12",
+          "buildVersion": "13",
           "date": "2026-07-17",
           "localizedDescription": "Publishes the current Community, Collection, Discover, Saved, Cart, and Sell experience with a SideStore-detectable version/build update and the established Cloudflare Tunnel backend configuration (build 13).",
           "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.12-b13/Calibre.ipa",
-          "size": 15270354,
-          "minOSVersion": "18.0"
+          "size": 15270354
         },
         {
           "version": "1.0.11",
+          "buildVersion": "12",
           "date": "2026-07-17",
           "localizedDescription": "Community tab (daily question, polls, live Calibre market data, the Journal), Collection tab (your watches with Passports and market estimates), swipe deck one tap from Home, market context in the sell flow, server-backed alerts, and saved searches.",
           "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.11-b12/Calibre.ipa",
-          "size": 15228957,
-          "minOSVersion": "18.0"
+          "size": 15228957
         },
         {
           "version": "1.0.10",
+          "buildVersion": "11",
           "date": "2026-07-15",
           "localizedDescription": "Home shelves end in a view-all card and a Browse all watches button; Saved matches Home's card behavior; Cart's saved-for-later rows are tappable with swipe actions; Sell drafts get swipe-to-delete everywhere they appear. Adds real Add/Replace card via Stripe's SetupIntent flow with webhook-confirmation polling. Fixes loading pop-in on Home, Sell, and listing pages, and clears cached cart/watchlist on sign-out (build 11).",
           "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.10-b11/Calibre.ipa",
-          "size": 14994495,
-          "minOSVersion": "18.0"
+          "size": 14994495
         },
         {
           "version": "1.0.9",
+          "buildVersion": "10",
           "date": "2026-07-14",
           "localizedDescription": "Rolls the hands-on tutorial across the app \u2014 browse filters, cart, checkout, offers, home, and the listing wizard now have first-run spotlight lessons alongside Discover and Sell (build 10).",
           "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.9-b10/Calibre.ipa",
-          "size": 14899541,
-          "minOSVersion": "18.0"
+          "size": 14899541
         },
         {
           "version": "1.0.8",
+          "buildVersion": "9",
           "date": "2026-07-14",
           "localizedDescription": "Corrects the seller fee rates back to 8% for private sellers (keep 92%) and 5% for verified dealers (keep 95%) everywhere they appear (build 9).",
           "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.8-b9/Calibre.ipa",
-          "size": 14899539,
-          "minOSVersion": "18.0"
+          "size": 14899539
         },
         {
           "version": "1.0.7",
+          "buildVersion": "8",
           "date": "2026-07-14",
           "localizedDescription": "Discover swipe is now one continuous motion (no more stop-and-reswipe), with a hands-on tutorial that teaches the deck. Discover and the home \"For You\" shelf are powered by a personalized recommendation engine. Sell dashboard: drafts named by title with swipe-to-delete, top-5 inventory behind a Show all toggle, and a scrollable filter bar (build 8).",
           "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.7-b8/Calibre.ipa",
-          "size": 14869603,
-          "minOSVersion": "18.0"
+          "size": 14869603
         },
         {
           "version": "1.0.6",
+          "buildVersion": "7",
           "date": "2026-07-14",
           "localizedDescription": "Real-device testing fixes: actual card payment form, fixed overlapping listing images, one-motion swipe deck, Sell page spacing, Journal entry point, Discover intro, Saved grid, wizard draft/validation fixes, wire confirmation dialog, full spacing pass, and a System/Light/Dark appearance toggle (build 7).",
           "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.6-b7/Calibre.ipa",
-          "size": 14806603,
-          "minOSVersion": "18.0"
+          "size": 14806603
         },
         {
           "version": "1.0.5",
+          "buildVersion": "6",
           "date": "2026-07-14",
           "localizedDescription": "Connects Calibre to the local backend through Cloudflare Tunnel from any network (build 6).",
           "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.5-b6/Calibre.ipa",
-          "size": 14750280,
-          "minOSVersion": "18.0"
+          "size": 14750280
         },
         {
           "version": "1.0.4",
+          "buildVersion": "5",
           "date": "2026-07-14",
           "localizedDescription": "Connects Calibre to the local Mac backend over Bonjour and adds the required iOS Local Network permission (build 5).",
           "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.4-b5/Calibre.ipa",
-          "size": 14750327,
-          "minOSVersion": "18.0"
+          "size": 14750327
         },
         {
           "version": "1.0.3",
+          "buildVersion": "4",
           "date": "2026-07-14",
           "localizedDescription": "Calibre app completion and reliability update (build 4).",
           "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.3-b4/Calibre.ipa",
-          "size": 14750266,
-          "minOSVersion": "18.0"
+          "size": 14750266
         },
         {
           "version": "1.0.2",
+          "buildVersion": "3",
           "date": "2026-07-13",
           "localizedDescription": "Calibre mobile and backend integration update (build 3).",
           "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.2-b3/Calibre.ipa",
-          "size": 14531581,
-          "minOSVersion": "18.0"
+          "size": 14531581
         },
         {
           "version": "1.0.1",
+          "buildVersion": "2",
           "date": "2026-07-12",
           "localizedDescription": "Latest Calibre update with activity, push notifications, support, profile, requests, and order improvements (build 2).",
           "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.1-b2/Calibre.ipa",
-          "size": 14634464,
-          "minOSVersion": "18.0"
+          "size": 14634464
         },
         {
           "version": "1.0",
+          "buildVersion": "1",
           "date": "2026-07-12",
           "localizedDescription": "Initial SideStore release (build 1).",
           "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0-b1/Calibre.ipa",
-          "size": 13818075,
-          "minOSVersion": "18.0"
+          "size": 13818075
         }
       ]
     }
