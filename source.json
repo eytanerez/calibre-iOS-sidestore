@@ -15,6 +15,14 @@
       },
       "versions": [
         {
+          "version": "1.0.22",
+          "buildVersion": "23",
+          "date": "2026-08-10",
+          "localizedDescription": "Apple Pay sits at the top of the payment sheet again, above the card form.\n\nA heads up while this is a sideloaded build: Apple Pay needs a merchant account Apple only issues to paid developer accounts, so it will ask for your face and then fail at the last step. Paying by card works (build 23).",
+          "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.22-b23/Calibre.ipa",
+          "size": 11499659
+        },
+        {
           "version": "1.0.21",
           "buildVersion": "22",
           "date": "2026-08-10",
