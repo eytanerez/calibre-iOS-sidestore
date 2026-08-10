@@ -15,6 +15,14 @@
       },
       "versions": [
         {
+          "version": "1.0.23",
+          "buildVersion": "24",
+          "date": "2026-08-10",
+          "localizedDescription": "Typing your card details no longer summons a floating tick over the Pay button. Tap anywhere off a field to put the keypad away (build 24).",
+          "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.23-b24/Calibre.ipa",
+          "size": 11499630
+        },
+        {
           "version": "1.0.22",
           "buildVersion": "23",
           "date": "2026-08-10",
