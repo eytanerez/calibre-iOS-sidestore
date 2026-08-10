@@ -15,6 +15,14 @@
       },
       "versions": [
         {
+          "version": "1.0.19",
+          "buildVersion": "20",
+          "date": "2026-08-09",
+          "localizedDescription": "Home now shows where your watch is. Any order still moving gets a card at the top with its progress, a button through to full tracking, and a \u22ef menu to stop tracking that one. Delivered and refunded orders stay for a day, then clear themselves.\n\nNotifications drop from the top of the screen instead of the bottom \u2014 swipe up to dismiss.\n\nSecond checks \u2014 signing out, deleting something \u2014 are centred popups now rather than sliding up from the edge.\n\nA seller's stats read in chocolate and no longer break across lines.\n\nThe app now talks to the hosted dev backend rather than a laptop tunnel (build 20).",
+          "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.19-b20/Calibre.ipa",
+          "size": 11500071
+        },
+        {
           "version": "1.0.18",
           "buildVersion": "19",
           "date": "2026-08-09",
