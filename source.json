@@ -15,10 +15,18 @@
       },
       "versions": [
         {
+          "version": "1.0.21",
+          "buildVersion": "22",
+          "date": "2026-08-10",
+          "localizedDescription": "Paying works. Tapping Pay at checkout now actually opens Stripe's card sheet — it could sit there doing nothing before. The same fix covers adding a card, placing a hold when you make an offer, and buying a shipping label.\n\nSetting up payouts to sell opens Stripe inside the app.\n\nApple Pay is hidden for now: a sideloaded build can't complete one, so it was a button that failed after you'd already approved it. Cards are unaffected (build 22).",
+          "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.21-b22/Calibre.ipa",
+          "size": 11499662
+        },
+        {
           "version": "1.0.20",
           "buildVersion": "21",
           "date": "2026-08-09",
-          "localizedDescription": "Everything from 1.0.19 \u2014 the home order tracker, notifications from the top, centred confirmations, chocolate seller stats \u2014 now talking to the backend on your Mac again instead of the hosted dev server (build 21).",
+          "localizedDescription": "Everything from 1.0.19 — the home order tracker, notifications from the top, centred confirmations, chocolate seller stats — now talking to the backend on your Mac again instead of the hosted dev server (build 21).",
           "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.20-b21/Calibre.ipa",
           "size": 11500087
         },
@@ -26,7 +34,7 @@
           "version": "1.0.19",
           "buildVersion": "20",
           "date": "2026-08-09",
-          "localizedDescription": "Home now shows where your watch is. Any order still moving gets a card at the top with its progress, a button through to full tracking, and a \u22ef menu to stop tracking that one. Delivered and refunded orders stay for a day, then clear themselves.\n\nNotifications drop from the top of the screen instead of the bottom \u2014 swipe up to dismiss.\n\nSecond checks \u2014 signing out, deleting something \u2014 are centred popups now rather than sliding up from the edge.\n\nA seller's stats read in chocolate and no longer break across lines.\n\nThe app now talks to the hosted dev backend rather than a laptop tunnel (build 20).",
+          "localizedDescription": "Home now shows where your watch is. Any order still moving gets a card at the top with its progress, a button through to full tracking, and a ⋯ menu to stop tracking that one. Delivered and refunded orders stay for a day, then clear themselves.\n\nNotifications drop from the top of the screen instead of the bottom — swipe up to dismiss.\n\nSecond checks — signing out, deleting something — are centred popups now rather than sliding up from the edge.\n\nA seller's stats read in chocolate and no longer break across lines.\n\nThe app now talks to the hosted dev backend rather than a laptop tunnel (build 20).",
           "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.19-b20/Calibre.ipa",
           "size": 11500071
         },
@@ -34,7 +42,7 @@
           "version": "1.0.18",
           "buildVersion": "19",
           "date": "2026-08-09",
-          "localizedDescription": "Every list works the same way now \u2014 the \u22ef menu, a swipe, and press-and-hold all offer the same actions, and rows without actions have none of them.\n\nEvery form shares one look, including the long notes boxes that used to be drawn by hand.\n\nYour Vault can list a watch on Calibre in one tap, with the details already filled in.\n\nPast polls open their own page: what everyone answered, what you answered, and a way to share it. Sharing is now on the market board, each watch's prices, and Journal stories too.\n\nThe market page no longer slides sideways, and a finger resting on a price chart doesn't stop the page scrolling \u2014 press and hold to read the chart (build 19).",
+          "localizedDescription": "Every list works the same way now — the ⋯ menu, a swipe, and press-and-hold all offer the same actions, and rows without actions have none of them.\n\nEvery form shares one look, including the long notes boxes that used to be drawn by hand.\n\nYour Vault can list a watch on Calibre in one tap, with the details already filled in.\n\nPast polls open their own page: what everyone answered, what you answered, and a way to share it. Sharing is now on the market board, each watch's prices, and Journal stories too.\n\nThe market page no longer slides sideways, and a finger resting on a price chart doesn't stop the page scrolling — press and hold to read the chart (build 19).",
           "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.18-b19/Calibre.ipa",
           "size": 11474185
         },
@@ -42,7 +50,7 @@
           "version": "1.0.17",
           "buildVersion": "18",
           "date": "2026-08-09",
-          "localizedDescription": "Keyboards now match their field \u2014 email, number, phone and password. Tap anywhere off a field to dismiss the keyboard.\n\nThe market page scrolls properly, even with a finger on a price chart (press and hold to scrub it), and brand and sort are dropdowns.\n\nListing a watch: Continue tells you what's missing beside each field instead of at the bottom, notes are optional, you can add photos from your library, and tapping a photo you've already taken shows it before you replace it.\n\nYour shop: swipe or press and hold a listing for Edit, Submit and Delete. Opening a listing from Sell keeps you in Sell.\n\nThe vault is behind Face ID and no longer shows value estimates. Save more than one card and pick which to use at checkout. Address forms fill from an address you've already saved, and anything destructive asks first (build 18).",
+          "localizedDescription": "Keyboards now match their field — email, number, phone and password. Tap anywhere off a field to dismiss the keyboard.\n\nThe market page scrolls properly, even with a finger on a price chart (press and hold to scrub it), and brand and sort are dropdowns.\n\nListing a watch: Continue tells you what's missing beside each field instead of at the bottom, notes are optional, you can add photos from your library, and tapping a photo you've already taken shows it before you replace it.\n\nYour shop: swipe or press and hold a listing for Edit, Submit and Delete. Opening a listing from Sell keeps you in Sell.\n\nThe vault is behind Face ID and no longer shows value estimates. Save more than one card and pick which to use at checkout. Address forms fill from an address you've already saved, and anything destructive asks first (build 18).",
           "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.17-b18/Calibre.ipa",
           "size": 11454558
         },
@@ -106,7 +114,7 @@
           "version": "1.0.9",
           "buildVersion": "10",
           "date": "2026-07-14",
-          "localizedDescription": "Rolls the hands-on tutorial across the app \u2014 browse filters, cart, checkout, offers, home, and the listing wizard now have first-run spotlight lessons alongside Discover and Sell (build 10).",
+          "localizedDescription": "Rolls the hands-on tutorial across the app — browse filters, cart, checkout, offers, home, and the listing wizard now have first-run spotlight lessons alongside Discover and Sell (build 10).",
           "downloadURL": "https://github.com/eytanerez/calibre-iOS-sidestore/releases/download/v1.0.9-b10/Calibre.ipa",
           "size": 14899541
         },
